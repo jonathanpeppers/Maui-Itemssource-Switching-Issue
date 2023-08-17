@@ -13,17 +13,8 @@
             <Button Text="ItemSource 1" Clicked="ItemSource_One_Button_Clicked"/>
             <Button Text="ItemSource 2" Clicked="ItemSource_Two_Button_Clicked"/>
         </HorizontalStackLayout>
-        <ListView Grid.Row="1" x:Name="listView" ItemsSource="{Binding EmployeesInfo1}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <CheckBox x:Name="checkBoxCell" Margin="10,0,0,0" IsChecked="{Binding IsChecked}"
-                          VerticalOptions="Center">
-                        </CheckBox>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+		<ListView Grid.Row="1" x:Name="listView" ItemsSource="{Binding EmployeesInfo1}">
+		</ListView>
     </Grid>
 
 </ContentPage>
